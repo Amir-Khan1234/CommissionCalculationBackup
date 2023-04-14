@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Or_Opportunity_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISBLANK(Account__c), ISBLANK( Opportunity__c ))</errorConditionFormula>
+    <errorMessage>Atleast one Account Or Opportunity should not be null.</errorMessage>
+</ValidationRule>

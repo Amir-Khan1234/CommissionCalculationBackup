@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Empolyee_Profile_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>Employee__r.Profile.Name &lt;&gt;  Commission_Master__r.RecordType.Name</errorConditionFormula>
+    <errorMessage>Employee&apos;s Profile Should match Commission Master Type</errorMessage>
+</ValidationRule>

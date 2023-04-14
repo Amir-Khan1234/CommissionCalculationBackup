@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InvoiceDateValidation</fullName>
+    <active>true</active>
+    <description>This rule verifies that the invoice date on invoice detail is same as invoice date on invoice header</description>
+    <errorConditionFormula>Invoice_Date__c &lt;&gt; Invoice_Header__r.Invoice_Date__c</errorConditionFormula>
+    <errorMessage>Invoice Date must be same as Invoice Date on Invoice Header</errorMessage>
+</ValidationRule>
